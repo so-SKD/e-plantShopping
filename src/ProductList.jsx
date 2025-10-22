@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from "react";import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
 import { addItem } from './CartSlice';
@@ -186,7 +186,7 @@ function ProductList({ onHomeClick }) {
                     name: "Pothos",
                     image: "https://cdn.pixabay.com/photo/2018/11/15/10/32/plants-3816945_1280.jpg",
                     description: "Tolerates neglect and can grow in various conditions.",
-                    cost: "1$0"
+                    cost: "$10"
                 },
                 {
                     name: "Snake Plant",
@@ -264,6 +264,7 @@ function ProductList({ onHomeClick }) {
         e.preventDefault();
         setShowCart(false);
     };
+    
     return (
         <div>
             <div className="navbar" style={styleObj}>
