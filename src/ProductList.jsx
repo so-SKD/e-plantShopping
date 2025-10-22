@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from 'react';
 import './ProductList.css'
 import CartItem from './CartItem';
-import { addItem } from './CartSlice'
+import { addItem } from './CartSlice';
+import { useDispatch } from 'react-redux'
 function ProductList({ onHomeClick }) {
     const [showCart, setShowCart] = useState(false);
     const [showPlants, setShowPlants] = useState(false); // State to control the visibility of the About Us page
     const [addedToCart, setAddedToCart] = useState({});
+    const dispatch = useDispatch(); 
     const plantsArray = [
         {
             category: "Air Purifying Plants",
@@ -184,7 +186,7 @@ function ProductList({ onHomeClick }) {
                     name: "Pothos",
                     image: "https://cdn.pixabay.com/photo/2018/11/15/10/32/plants-3816945_1280.jpg",
                     description: "Tolerates neglect and can grow in various conditions.",
-                    cost: "$10"
+                    cost: "1$0"
                 },
                 {
                     name: "Snake Plant",
