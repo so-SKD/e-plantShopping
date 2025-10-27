@@ -1,8 +1,9 @@
 {
-  "name": "shoppingcart",
+  "name": "e-PlantShopping",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.1.0",
   "type": "module",
+  "homepage": "https://so-skd.github.io/e-plantShopping/",
   "scripts": {
     "dev": "vite",
     "predeploy": "npm run build",
