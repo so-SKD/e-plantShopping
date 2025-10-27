@@ -37,6 +37,7 @@ const CartItem = ({ onContinueShopping }) => {
     dispatch(updateQuantity({ name: item.name, quantity: newQuantity }));
   };
 
+
   return (
     <div className="cart-container">
       <h2>Total Cart Amount: ${calculateTotalCost().toFixed(2)}</h2>
@@ -84,7 +85,11 @@ const CartItem = ({ onContinueShopping }) => {
       <div className="continue_shopping_btn">
         <button className="get-started-button" onClick={onContinueShopping}>Continue Shopping</button>
         <br />
-        <button className="get-started-button1">Checkout</button>
+        <button
+          onClick={() => alert('Functionality to be added later / Placeholder Text')}
+          className="checkout-button"
+        >Checkout</button>
+
       </div>
     </div>
   );
