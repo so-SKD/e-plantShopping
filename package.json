@@ -3,11 +3,8 @@
   "private": true,
   "version": "0.1.0",
   "type": "module",
-  "homepage": "https://so-skd.github.io/e-plantShopping/",
-  "scripts": {
+    "scripts": {
     "dev": "vite",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
     "build": "vite build",
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "preview": "vite build; vite preview --host"
